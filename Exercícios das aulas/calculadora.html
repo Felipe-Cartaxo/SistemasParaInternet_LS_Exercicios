@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+<h1>Calculadora</h1>
+
+<p>Clique no botão abaixo para utilizar a calculadora!</p>
+
+<button onclick="calculadora()">Teste já!</button>
+
+<script>
+function calculadora() {
+    let num1 = parseInt(prompt('Número 1: '))
+    let num2 = parseInt(prompt('Número 2: '))
+    let op = prompt('Informe uma operação: ')
+    let resultado;
+
+    switch (op) {
+        case '+':
+            resultado = num1 + num2
+            window.alert(resultado)
+            break
+        case '-':
+            resultado = num1 - num2
+            window.alert(resultado)
+            break
+        case '*':
+            resultado = num1 * num2
+            window.alert(resultado)
+            break
+        case '/':
+            resultado = num1 / num2
+            window.alert(resultado)
+            break
+        default:
+            window.alert('Informe uma operação válida.')
+        }
+}
+</script>
+    
+</body>
+</html>
